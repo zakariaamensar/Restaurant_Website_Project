@@ -1,6 +1,6 @@
 # Restaurant_Website_Project
 Project for Web class
-Group Members:
+->Group Members:
 - Amensar Zakaria
 - Guilmi Safwan
 - Tahir Rida
