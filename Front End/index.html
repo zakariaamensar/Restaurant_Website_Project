@@ -17,12 +17,12 @@
         <nav class="navBar">
             <img class="logo" src="media/logo.png" alt="">
             <div class="navOptions">
-                <a href="#/" class="option">HOME</a>
-                <a href="#/" class="option">ABOUT</a>
-                <a href="#/" class="option">MENU</a>
-                <a href="#/" class="option">TEAM</a>
-                <a href="#/" class="option">BOOK!</a>
-                <a href="#/" class="option">BLOG</a>
+                <a href="#home" class="option">HOME</a>
+                <a href="#about" class="option">ABOUT</a>
+                <a href="#menu" class="option">MENU</a>
+                <a href="#team" class="option">TEAM</a>
+                <a href="#book" class="option">BOOK!</a>
+                <a href="#blog" class="option">BLOG</a>
             </div>
             <div class="side-buttons">
                 <img class="butt" src="media/crown-symbol.png" alt="">
@@ -36,13 +36,13 @@
             <h2 class="h2">We're Open</h2>
             <h1 class="h1">Best Burger</h1>
             <h3 class="h3">You Will Love It</h3>
-            <a href="#/" class="order">Order Now</a>
+            <a href="#book" class="order" >Book Now</a>
 
         </div>
     </section>
 
     <section class="section2">
-        <h1 class="slogan">WELCOME TO ROYATE</h1>
+        <h1 class="slogan" id="blog">WELCOME TO ROYATE</h1>
         <div class="cards">
             <div class="card">
                 <img src="media/post-thumb-1.jpg" alt="" class="img1">
@@ -72,8 +72,8 @@
     </section>
 
     <scetion class="section3">
-        <h1 class="h1">OUR FOOD MENU</h1>
-        <div class="menu">
+        <h1 class="h1" >OUR FOOD MENU</h1>
+        <div class="menu" id="menu">
             <div class="col">
 
                 <h2 class="menu-type">MAIN COURSE:</h2>
@@ -107,7 +107,7 @@
     </scetion>
 
 
-    <section class="section4">
+    <section class="section4" id="team">
         <h1 class="slogan">OUR TALENTED CHEFS</h1>
         <div class="cards">
             <div class="card">
@@ -129,35 +129,42 @@
 
     <section class="section5">
         <img src="media/book-a-table.jpg" alt="" class="booking-img">
-        <div class="booking">
+        <div class="booking" id="book">
             <p class="h1">BOOK A TABLE</p>
             <div class="booking-infos">
 
-                <form action="" class="col">
-                    <select name="people" id="People" class="fields" placeholder="People">
-                        <option value="0">People</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">4</option>
-                        <option value="4">4</option>
-                    </select>
-
-                    <input type="text" id="name" name="name" placeholder="Name" class="fields">
-                    <input type="number" id="phone" name="phone" placeholder="Phone" class="fields">
+                <form action="index1.php" class="form" method="POST">
+                    <div class="col">
+                        <select name="people" id="People" class="fields" placeholder="People">
+                            <option value="0">People</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">4</option>
+                            <option value="4">4</option>
+                        </select>
+                
+                        <input type="text" id="name" name="name" placeholder="Name" class="fields">
+                        <input type="number" id="phone" name="phone" placeholder="Phone" class="fields">
+                    </div>
+                    <div class="col">
+                        <input type="date" id="date" name="date" placeholder="Date" class="fields">
+                        <input type="time" id="time" name="time" placeholder="Time" class="fields">
+                        <input type="email" id="email" name="email" placeholder="Email" class="fields">
+                        
+                    </div>
+                    <div>
+                        <input type="submit" value="Book Now" class="book-btn"
+                        >
+                    </div>
                 </form>
-                <form action="" class="col">
-                    <input type="date" id="date" name="date" placeholder="Date" class="fields">
-                    <input type="time" id="time" name="time" placeholder="Time" class="fields">
-                    <input type="email" id="email" name="email" placeholder="Email" class="fields">
-                </form>
-            </div>
-            <a href="#/" class="book-btn">Book Now</a>
+                </div>
+            
 
         </div>
     </section>
 
 
-    <footer class="footer">
+    <footer class="footer" id="about">
         <img src="media/crown-symbol.png" alt="" class="logo">
         <section class="container">
             <div class="div">

@@ -2,5 +2,5 @@
 Project for Web class
 ->Group Members:
 - Amensar Zakaria
-- Guilmi Safwan
+- Guilmi Safouane
 - Tahir Rida
