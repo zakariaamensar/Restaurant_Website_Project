@@ -1,1 +1,0 @@
-DataBase -----> Mysql (locale).
