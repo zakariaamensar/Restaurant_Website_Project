@@ -19,3 +19,26 @@
                 mysqli_close($link);
             }
             ?>
+<!-- Sending email verification>
+            <?php
+             if (isset($_POST['submit'])) {
+                $url = "https://script.google.com/macros/s/AKfycbwUV2z7CzbtTPs7mfy2mGz1zTqBNG4W2PR8Z3mQiPNnATIGJwz2Mnqq8jQ4NjszIuUg/exec";
+                $ch = curl_init($url);
+                $name = $_POST['name'];
+                $people = $_POST['people'];
+                $date = $_POST['date'];
+                $time = $_POST['time'];
+                curl_setopt_array($ch, [
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_FOLLOWLOCATION => true,
+                CURLOPT_POSTFIELDS => http_build_query([
+
+                    "recipient" => $_POST['email'],
+                    "subject" => "Reservation",
+                    "body" => "Hey $name, You've reserved a table for $people people, On $date at $time, I hope you'll enjoy you time here in Royat Burger."
+        ])
+    ]);
+    $result = curl_exec($ch);
+
+}
+?>
