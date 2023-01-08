@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Mukta, sans-serif;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: #4f546c;
+  font-size: 0.9rem;
+  background-color: #f9fbff;
+  margin: 6em;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px #e1e5ee;
+  background-color: white;
+  overflow: hidden;
+}
+
+thead {
+  box-shadow: 0 5px 10px #e1e5ee;
+}
+
+th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+td {
+  padding: 1rem 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #2962ff;
+}
+
+.status {
+  padding: 0.2rem 1rem;
+  text-align: center;
+}
+.amount {
+  text-align: right;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f6fb;
+}
+.power{
+    display:block;
+    margin:0 auto 12px auto;
+}
